@@ -41,21 +41,26 @@
 
     <Button
         android:id="@+id/add_people_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add People"
+        android:layout_width="97dp"
+        android:layout_height="102dp"
+        android:layout_marginBottom="60dp"
+        android:foreground="@drawable/add_people"
+        app:backgroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageFilterButton"
-        app:layout_constraintVertical_bias="0.41" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="112dp"
-        tools:layout_editor_absoluteY="186dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilterButton"
+        app:layout_constraintVertical_bias="0.295"
+        app:srcCompat="@drawable/you_are_alone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
