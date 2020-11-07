@@ -12,8 +12,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        Button button = findViewById(R.id.add_people_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                
+            }
+        });
+
     }
-    Button add_people_button =findViewById(R.id.add_people_button);
-    //add_people_button.setOnClickListener(new View.OnClickListener()
+
 
 }
