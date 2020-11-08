@@ -3,6 +3,14 @@
     <string name="welcome">Welcome</string>
     <string name="skip">SKIP</string>
     <string name="todo">TODO</string>
+    <string name="bg1">bg1</string>
+    <string name="bg2">bg2</string>
+    <string name="bg3">bg3</string>
+    <string name="bg4">bg4</string>
+    <string name="pg1">pg1</string>
+    <string name="pg2">pg2</string>
+    <string name="pg3">pg3</string>
+    <string name="pg4">pg4</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -11,4 +19,6 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="select_background">Select Background</string>
+    <string name="select_pose">Select Pose</string>
 </resources>
