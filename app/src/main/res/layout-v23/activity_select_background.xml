@@ -6,6 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".SelectBackground">
 
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/outdoor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/birthday"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="84dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/diwali"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="86dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/holi"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
     <androidx.constraintlayout.utils.widget.ImageFilterButton
         android:id="@+id/imageFilterButton3"
         android:layout_width="415dp"
@@ -47,7 +95,7 @@
         android:layout_width="170dp"
         android:layout_height="140dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="88dp"
         android:contentDescription="@string/bg3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton"
@@ -57,7 +105,7 @@
         android:id="@+id/imageButton4"
         android:layout_width="170dp"
         android:layout_height="140dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="88dp"
         android:layout_marginEnd="28dp"
         android:contentDescription="@string/bg4"
         app:layout_constraintEnd_toEndOf="parent"

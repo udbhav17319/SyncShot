@@ -21,4 +21,13 @@
     <string name="login_failed">"Login failed"</string>
     <string name="select_background">Select Background</string>
     <string name="select_pose">Select Pose</string>
+    <string name="holi">Holi</string>
+    <string name="birthday">Birthday</string>
+    <string name="diwali">Diwali</string>
+    <string name="outdoor">Outdoor</string>
+    <string name="yoga_1">Yoga-1</string>
+    <string name="team_up_1">Team Up-1</string>
+    <string name="standing_1">Standing-1</string>
+    <string name="sqad_game_1">Sqad Game-1</string>
+
 </resources>
