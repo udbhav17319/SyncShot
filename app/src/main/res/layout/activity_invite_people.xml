@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".InvitePeople">
 
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/imageFilterButton2"
+        android:layout_width="415dp"
+        android:layout_height="150dp"
+        android:foreground="#E9DBFD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="261dp"
+        android:layout_height="105dp"
+        android:text="Add People"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person 1"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="247dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Person 2"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="339dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

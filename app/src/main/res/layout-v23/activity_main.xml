@@ -17,8 +17,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="267dp"
-        android:layout_height="69dp"
+        android:layout_width="208dp"
+        android:layout_height="73dp"
         android:text="@string/welcome"
         android:textSize="50sp"
         android:textStyle="bold"
