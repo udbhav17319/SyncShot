@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncShot">
-        <activity android:name=".SelectPose"></activity>
+        <activity android:name=".CameraActivity">
+        </activity>
+        <activity android:name=".SelectPose" />
         <activity android:name=".SelectBackground" />
         <activity android:name=".MainActivity" />
         <activity android:name=".InvitePeople" />
@@ -24,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
