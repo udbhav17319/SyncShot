@@ -17,7 +17,7 @@ public class InvitePeople extends AppCompatActivity {
         Button button3 = findViewById(R.id.button3);
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(String.valueOf(CameraActivity.class)));
+                startActivity(new Intent(InvitePeople.this, CameraActivity.class));
             }
         });
 
