@@ -10,7 +10,7 @@
         android:id="@+id/takePicture_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Take Photo"
+        android:text="@string/take_photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,8 +21,13 @@
         android:id="@+id/imageView6"
         android:layout_width="322dp"
         android:layout_height="491dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginBottom="36dp"
         app:layout_constraintBottom_toTopOf="@+id/takePicture_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.929"
         app:srcCompat="@drawable/pose_4"
-        tools:layout_editor_absoluteX="44dp" />
+        android:contentDescription="@string/todo" />
 </androidx.constraintlayout.widget.ConstraintLayout>

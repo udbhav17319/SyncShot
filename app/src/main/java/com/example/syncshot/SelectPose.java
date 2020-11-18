@@ -26,7 +26,7 @@ public class SelectPose extends AppCompatActivity {
         Button button8 = findViewById(R.id.button7);
         button8.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                startActivity(new Intent(SelectPose.this, SelectBackground.class));
+                startActivity(new Intent(SelectPose.this, CameraActivity.class));
             }
         });
     }
