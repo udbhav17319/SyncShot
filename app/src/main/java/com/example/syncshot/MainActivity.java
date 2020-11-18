@@ -22,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button skip_button = findViewById(R.id.skip_button);
+        skip_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, InvitePeople.class));
+            }
+        });
+
     }
 
 
