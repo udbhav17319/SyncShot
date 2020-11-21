@@ -15,14 +15,14 @@ public class SelectBackground extends AppCompatActivity {
         setContentView(R.layout.activity_select_background);
 
 
-        Button button7 = findViewById(R.id.button7);
+        Button button7 = findViewById(R.id.back_button);
         button7.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SelectBackground.this, InvitePeople.class));
             }
         });
 
-        Button button6 = findViewById(R.id.button7);
+        Button button6 = findViewById(R.id.skip_button);
         button6.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SelectBackground.this, SelectPose.class));

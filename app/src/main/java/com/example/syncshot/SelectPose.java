@@ -16,14 +16,14 @@ public class SelectPose extends AppCompatActivity {
 
 
 
-        Button button9 = findViewById(R.id.button7);
+        Button button9 = findViewById(R.id.back_button);
         button9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SelectPose.this, SelectBackground.class));
             }
         });
 
-        Button button8 = findViewById(R.id.button7);
+        Button button8 = findViewById(R.id.next_button);
         button8.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SelectPose.this, CameraActivity.class));

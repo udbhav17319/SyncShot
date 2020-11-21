@@ -14,21 +14,15 @@ public class InvitePeople extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_invite_people);
 
-        Button button3 = findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                startActivity(new Intent(InvitePeople.this, CameraActivity.class));
-            }
-        });
 
-        Button button4 = findViewById(R.id.button4);
+        Button button4 = findViewById(R.id.back_button);
         button4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(InvitePeople.this, MainActivity.class));
             }
         });
 
-        Button button5 = findViewById(R.id.button5);
+        Button button5 = findViewById(R.id.skip_button);
         button5.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(InvitePeople.this, SelectBackground.class));
