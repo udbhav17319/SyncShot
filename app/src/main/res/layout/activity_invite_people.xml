@@ -6,48 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".InvitePeople">
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
-        android:text="@string/person_2"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/person_2"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="376dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:srcCompat="@drawable/user"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="469dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:srcCompat="@drawable/user"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="379dp" />
-
     <androidx.constraintlayout.utils.widget.ImageFilterButton
         android:id="@+id/imageFilterButton2"
         android:layout_width="415dp"
@@ -59,8 +17,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="270dp"
-        android:layout_height="86dp"
+        android:layout_width="276dp"
+        android:layout_height="37dp"
         android:text="@string/add_people"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -70,18 +28,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.057" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="203dp"
-        android:layout_height="42dp"
-        android:text="@string/person_2"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.697"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="296dp" />
 
     <Button
         android:id="@+id/next_button"
@@ -129,37 +75,174 @@
         app:layout_constraintTop_toTopOf="@+id/imageFilterButton2"
         app:layout_constraintVertical_bias="0.125" />
 
-    <ImageButton
-        android:id="@+id/imageButton8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        app:srcCompat="@drawable/user"
-        tools:layout_editor_absoluteX="72dp"
-        tools:layout_editor_absoluteY="298dp" />
-
     <LinearLayout
-        android:layout_width="279dp"
-        android:layout_height="493dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="213dp">
+        android:layout_width="355dp"
+        android:layout_height="313dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageFilterButton2"
+        tools:layout_editor_absoluteX="16dp">
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="185dp"
-            android:layout_height="51dp"
-            android:background="@color/white"
-            android:text="@string/person_1"
-            android:textColor="@color/black"
-            app:backgroundTint="@color/white" />
-
-        <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
-            app:srcCompat="@drawable/user" />
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:srcCompat="@drawable/user" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:text="@string/person_1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:srcCompat="@drawable/user" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:text="@string/person_1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:srcCompat="@drawable/user" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:text="@string/person_1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:srcCompat="@drawable/user" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:text="@string/person_1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:srcCompat="@drawable/user" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:text="@string/person_1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:srcCompat="@drawable/user" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:text="@string/person_1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                app:srcCompat="@drawable/user" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="185dp"
+                android:layout_height="60dp"
+                android:background="@color/white"
+                android:text="@string/person_1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white" />
+
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
