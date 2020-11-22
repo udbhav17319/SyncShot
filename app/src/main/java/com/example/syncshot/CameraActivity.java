@@ -19,8 +19,12 @@ public class CameraActivity extends AppCompatActivity {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         try {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
+
         } catch (ActivityNotFoundException e) {
             // display error state to the user
+
+
+            setContentView(R.layout.activity_camera);
         }
     }
     @Override
