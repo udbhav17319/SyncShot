@@ -76,8 +76,8 @@
         app:layout_constraintVertical_bias="0.125" />
 
     <LinearLayout
-        android:layout_width="355dp"
-        android:layout_height="313dp"
+        android:layout_width="347dp"
+        android:layout_height="311dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageFilterButton2"
@@ -222,7 +222,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="281dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
