@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".SelectBackground">
 
+    <ImageButton
+        android:id="@+id/back_button2"
+        android:layout_width="27dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/primary"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arr" />
+
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
@@ -69,15 +82,16 @@
 
     <ImageButton
         android:id="@+id/back_button"
-        android:layout_width="72dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="27dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
         android:background="@color/primary"
-        android:scaleType="fitEnd"
+        android:contentDescription="@string/todo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/arr" />
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -104,8 +118,8 @@
 
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="170dp"
-        android:layout_height="140dp"
+        android:layout_width="143dp"
+        android:layout_height="133dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="88dp"
         android:contentDescription="@string/bg3"
@@ -128,8 +142,9 @@
         android:id="@+id/textView"
         android:layout_width="338dp"
         android:layout_height="91dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="32dp"
         android:text="@string/select_background"
         android:textSize="36sp"
         android:textStyle="bold"

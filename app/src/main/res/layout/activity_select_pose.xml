@@ -21,17 +21,16 @@
 
     <ImageButton
         android:id="@+id/back_button1"
-        android:layout_width="42dp"
-        android:layout_height="42dp"
+        android:layout_width="41dp"
+        android:layout_height="26dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="56dp"
         android:background="@color/primary"
         android:contentDescription="@string/todo"
-        android:scaleType="fitEnd"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:srcCompat="@drawable/arr" />
 
     <ImageView
         android:id="@+id/imageView2"
