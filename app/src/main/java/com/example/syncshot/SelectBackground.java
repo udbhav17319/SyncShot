@@ -23,8 +23,15 @@ public class SelectBackground extends AppCompatActivity {
             }
         });
 
-        Button button6 = findViewById(R.id.skip_button);
+        Button button6 = findViewById(R.id.next_button);
         button6.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(SelectBackground.this, SelectPose.class));
+            }
+        });
+
+        Button button9 = findViewById(R.id.skip_button);
+        button9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SelectBackground.this, SelectPose.class));
             }

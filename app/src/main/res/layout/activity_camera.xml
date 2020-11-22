@@ -15,19 +15,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896" />
+        app:layout_constraintVertical_bias="0.868" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="322dp"
         android:layout_height="491dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
         android:layout_marginBottom="36dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toTopOf="@+id/takePicture_button"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.929"
+        app:layout_constraintVertical_bias="0.924"
         app:srcCompat="@drawable/pose_4"
-        android:contentDescription="@string/todo" />
+        tools:layout_editor_absoluteX="44dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
