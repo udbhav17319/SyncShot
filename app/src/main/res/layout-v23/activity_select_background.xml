@@ -81,6 +81,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <SearchView
+        android:id="@+id/searchView"
         android:layout_width="348dp"
         android:layout_height="51dp"
         android:layout_marginBottom="588dp"
@@ -188,4 +189,18 @@
         app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="231dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="432dp"
+        android:text="CHOOSE FROM GALLERY"
+        android:textColor="@color/purple_200"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilterButton3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
