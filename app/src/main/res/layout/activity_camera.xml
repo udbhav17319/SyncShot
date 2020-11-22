@@ -6,26 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".CameraActivity">
 
-    <Button
-        android:id="@+id/takePicture_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/take_photo"
+    <androidx.constraintlayout.utils.widget.ImageFilterButton
+        android:id="@+id/imageFilterButton5"
+        android:layout_width="415dp"
+        android:layout_height="150dp"
+        android:foreground="@color/primary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.868" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="365dp"
+        android:layout_height="129dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Follow the instructions and click capture when ready:"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="322dp"
-        android:layout_height="491dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="341dp"
+        android:layout_height="388dp"
         android:contentDescription="@string/todo"
-        app:layout_constraintBottom_toTopOf="@+id/takePicture_button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.924"
-        app:srcCompat="@drawable/pose_4"
-        tools:layout_editor_absoluteX="44dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilterButton5"
+        app:layout_constraintVertical_bias="0.217"
+        app:srcCompat="@drawable/pose_4" />
+
+    <ImageButton
+        android:id="@+id/takePicture_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/cap" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/menu" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
