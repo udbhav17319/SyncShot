@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class CameraActivity extends AppCompatActivity {
@@ -35,7 +36,7 @@ public class CameraActivity extends AppCompatActivity {
 
 
 
-        Button button1 = findViewById(R.id.takePicture_button);
+        ImageButton button1 = (ImageButton) findViewById(R.id.takePicture_button);
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 dispatchTakePictureIntent();
