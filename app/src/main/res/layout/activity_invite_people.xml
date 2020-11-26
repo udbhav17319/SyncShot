@@ -79,9 +79,12 @@
         android:layout_width="347dp"
         android:layout_height="311dp"
         android:orientation="vertical"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageFilterButton2"
-        tools:layout_editor_absoluteX="16dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageFilterButton2">
 
         <LinearLayout
             android:layout_width="match_parent"
