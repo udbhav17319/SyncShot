@@ -19,13 +19,25 @@
         app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <SearchView
+        android:layout_width="348dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="588dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageFilterButton2"
+        app:layout_constraintVertical_bias="0.125" />
+
     <TextView
         android:id="@+id/textView11"
         android:layout_width="338dp"
         android:layout_height="91dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginTop="28dp"
         android:text="@string/select_background"
         android:textSize="36sp"
         android:textStyle="bold"
@@ -141,6 +153,8 @@
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:text="@string/next"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -152,6 +166,8 @@
         android:layout_marginEnd="152dp"
         android:layout_marginRight="152dp"
         android:text="@string/skip"
+        android:textColor="@color/black"
+        app:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -159,7 +175,7 @@
         android:id="@+id/back_button"
         android:layout_width="38dp"
         android:layout_height="50dp"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="28dp"
         android:background="@color/primary"
         android:contentDescription="@string/todo"
         android:scaleType="fitEnd"
