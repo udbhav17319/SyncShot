@@ -6,6 +6,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -14,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;
@@ -32,13 +34,23 @@ import com.example.syncshot.ui.login.LoginViewModelFactory;
 
 import java.io.IOException;
 
+import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.RequestBody;
 import okhttp3.Response;
+
+
+
 
 public class LoginActivity extends AppCompatActivity {
 
     private LoginViewModel loginViewModel;
+
+    TextView txtString;
+
+    public String url= "https://10.0.2.2";
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -127,20 +139,41 @@ public class LoginActivity extends AppCompatActivity {
                         passwordEditText.getText().toString());
             }
         });
+
+
+        txtString= (TextView)findViewById(R.id.ok_text);
+
+
+        Button button = findViewById(R.id.ok_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        doGetRequest();
+                    }
+                }).start();
+
+            }
+        });
     }
 
 
-    OkHttpClient client = new OkHttpClient();
-
-    String run(String url) throws IOException {
-        Request request = new Request.Builder()
+    private void  doGetRequest(){
+        String url="http://www.google.com";
+        OkHttpClient client = new OkHttpClient();
+        Request newRequest = new Request.Builder()
                 .url(url)
                 .build();
-
-        try (Response response = client.newCall(request).execute()) {
-            return response.body().string();
+        try {
+            Response response= client.newCall(newRequest).execute();
+            Log.d("getrequest",response.body().string());
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.d("getrequest Failed","getrequest");
         }
     }
+
 
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
