@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.syncshot">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncShot">
-        <activity android:name=".CameraActivity">
-        </activity>
+        <activity android:name=".scroll_view"></activity>
+        <activity android:name=".CameraActivity" />
         <activity android:name=".SelectPose" />
         <activity android:name=".SelectBackground" />
         <activity android:name=".MainActivity" />
@@ -26,7 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
