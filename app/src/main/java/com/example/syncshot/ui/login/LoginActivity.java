@@ -160,14 +160,17 @@ public class LoginActivity extends AppCompatActivity {
 
 
     private void  doGetRequest(){
+        Log.d("getrequest_funct_called","function called");
         String url="http://www.google.com";
         OkHttpClient client = new OkHttpClient();
+        Log.d("client created","client created");
         Request newRequest = new Request.Builder()
                 .url(url)
                 .build();
+        Log.d("request created","request created");
         try {
             Response response= client.newCall(newRequest).execute();
-            Log.d("getrequest",response.body().string());
+            Log.d("got response",response.body().string());
         } catch (IOException e) {
             e.printStackTrace();
             Log.d("getrequest Failed","getrequest");
