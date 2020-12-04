@@ -6,6 +6,8 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
@@ -13,6 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Environment;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
@@ -32,9 +35,15 @@ import com.example.syncshot.R;
 import com.example.syncshot.ui.login.LoginViewModel;
 import com.example.syncshot.ui.login.LoginViewModelFactory;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.util.Arrays;
 
+import okhttp3.ConnectionSpec;
 import okhttp3.MediaType;
+import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -153,15 +162,73 @@ public class LoginActivity extends AppCompatActivity {
                         doGetRequest();
                     }
                 }).start();
+            }
+        });
 
+
+        Button button2=findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        domultipartrequest();
+                    }
+                }).start();
             }
         });
     }
 
+    private void domultipartrequest(){
+        String path= Environment.getExternalStorageDirectory().toString()+"/Download";
+        Log.d("folder path","="+ path);
+        File f=new File(path);
+        Log.d("f","="+ f);
+        File[] files =f.listFiles();
+        Log.d("files","="+ files);
+        for (int i=0;i<files.length;i++){
+            if(files[i].isFile()){
+                Log.d("filename:", "="+ files[i].getName());
+                sendImage(files[i]);
+                break;
+            }
+        }
+
+    }
+    private void sendImage(File file){
+        Log.d("api calling funct","function called");
+        String url="https://api.remove.bg/v1.0/removebg/";
+        OkHttpClient client = new OkHttpClient();
+        Log.d("client created","client created");
+        RequestBody body= new MultipartBody.Builder()
+                .addFormDataPart("image",file.getName(),RequestBody.create(MediaType.parse("image/jpeg"),file))
+                .build();
+        Log.d("request body created","request body created");
+        Request newRequest = new Request.Builder()
+                .addHeader("X-Api-Key", "gpe797ndqNcuhwrvtPE7Cufv")
+                .url(url)
+                .post(body)
+                .build();
+        Log.d("request created","request created");
+        try {
+            Response response= client.newCall(newRequest).execute();
+            Log.d("got response",response.body().string());
+//            InputStream inpstream=response.body().byteStream();
+//            Bitmap btmap= BitmapFactory.decodeStream(inpstream);
+            FileOutputStream fos = new FileOutputStream("d:/bgremovedimage.png");
+            fos.write(response.body().bytes());
+            fos.close();
+            Log.d("got response","written to storage");
+        } catch (IOException e) {
+            e.printStackTrace();
+            Log.d("getrequest Failed","getrequest");
+        }
+    }
 
     private void  doGetRequest(){
         Log.d("getrequest_funct_called","function called");
-        String url="http://www.google.com";
+        String url="http://10.0.2.2:5000/";
         OkHttpClient client = new OkHttpClient();
         Log.d("client created","client created");
         Request newRequest = new Request.Builder()
@@ -176,7 +243,6 @@ public class LoginActivity extends AppCompatActivity {
             Log.d("getrequest Failed","getrequest");
         }
     }
-
 
     private void updateUiWithUser(LoggedInUserView model) {
         String welcome = getString(R.string.welcome) + model.getDisplayName();
