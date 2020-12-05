@@ -420,7 +420,7 @@
                         android:layout_weight="1"
                         android:background="@color/white"
                         android:text="@string/next"
-                        android:textColor="@color/black"
+                        android:textColor="@color/purple_500"
                         app:backgroundTint="@color/white" />
                 </LinearLayout>
             </LinearLayout>
