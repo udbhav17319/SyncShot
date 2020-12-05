@@ -3,7 +3,6 @@
     package="com.example.syncshot">
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncShot"
         android:usesCleartextTraffic="true">
-        <activity android:name=".scroll_view"></activity>
+        <activity android:name=".check_one"></activity>
+        <activity android:name=".scroll_view" />
         <activity android:name=".CameraActivity" />
         <activity android:name=".SelectPose" />
         <activity android:name=".SelectBackground" />
@@ -27,9 +27,9 @@
             </intent-filter>
         </activity>
     </application>
-
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 </manifest>

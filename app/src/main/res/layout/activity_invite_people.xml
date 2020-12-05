@@ -252,4 +252,10 @@
         </LinearLayout>
     </LinearLayout>
 
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="170dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
