@@ -34,7 +34,7 @@
     <string name="person_2">Person 2</string>
     <string name="cam">cam</string>
     <string name="back">back</string>
-    <string name="next">NEXT ></string>
+    <string name="next">NEXT</string>
     <string name="take_photo">Take Photo</string>
     <string name="title_activity_scroll_view">scroll_view</string>
     <!-- Strings used for fragments for navigation -->
