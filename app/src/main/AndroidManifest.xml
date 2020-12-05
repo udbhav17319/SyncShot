@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncShot"
         android:usesCleartextTraffic="true">
-        <activity android:name=".check_one"></activity>
+        <activity android:name=".check_two"></activity>
+        <activity android:name=".check_one" />
         <activity android:name=".scroll_view" />
         <activity android:name=".CameraActivity" />
         <activity android:name=".SelectPose" />
@@ -27,9 +28,9 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>
