@@ -181,7 +181,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void domultipartrequest(){
-        String path= Environment.getExternalStorageDirectory().toString()+"/Download";
+        String path= Environment.getExternalStorageDirectory().toString()+"/Pictures";
         Log.d("folder path","="+ path);
         File f=new File(path);
         Log.d("f","="+ f);
