@@ -78,26 +78,29 @@
         android:id="@+id/ok_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="463dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="152dp" />
 
     <Button
         android:id="@+id/ok_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
         android:text="check get request"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="542dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/ok_text"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="91dp" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
         android:text="call API"
-        tools:layout_editor_absoluteX="164dp"
-        tools:layout_editor_absoluteY="638dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/ok_button"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="136dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

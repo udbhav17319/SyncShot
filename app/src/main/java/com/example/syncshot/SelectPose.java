@@ -17,7 +17,7 @@ public class SelectPose extends AppCompatActivity {
 
 
 
-        ImageButton button9 = (ImageButton) findViewById(R.id.back_button1);
+        Button button9 = findViewById(R.id.back_button);
         button9.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SelectPose.this, SelectBackground.class));
@@ -26,6 +26,14 @@ public class SelectPose extends AppCompatActivity {
 
         Button button8 = findViewById(R.id.next_button);
         button8.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(SelectPose.this, CameraActivity.class));
+            }
+        });
+
+
+        Button skipbutton = findViewById(R.id.skip_button);
+        skipbutton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SelectPose.this, CameraActivity.class));
             }

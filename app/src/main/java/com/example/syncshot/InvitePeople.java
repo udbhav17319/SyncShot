@@ -16,7 +16,7 @@ public class InvitePeople extends AppCompatActivity {
         setContentView(R.layout.activity_invite_people);
 
 
-        ImageButton button4 = (ImageButton) findViewById(R.id.back_button);
+        Button button4 = findViewById(R.id.back_button);
         button4.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(InvitePeople.this, MainActivity.class));

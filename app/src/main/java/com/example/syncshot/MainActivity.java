@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_welcome);
 
 
         Button button = findViewById(R.id.add_people_button);
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button skip_button = findViewById(R.id.next_button);
+        Button skip_button = findViewById(R.id.skip_button);
         skip_button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, InvitePeople.class));

@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CameraActivity">
+    tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -21,14 +23,14 @@
             android:background="@color/primary">
 
 
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="Follow the instructions and click capture when ready:"
-                android:textSize="30sp" />
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/welcome"
+                    android:textSize="30sp" />
 
 
         </LinearLayout>
@@ -43,11 +45,28 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="341dp"
-                android:layout_height="388dp"
-                android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/pose_4" />
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/you_are_alone" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="You are alone, Invite more people or skip"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/add_people_button"
+                android:layout_width="97dp"
+                android:layout_height="102dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="60dp"
+                android:foreground="@drawable/add_people"
+                app:backgroundTint="@color/white" />
         </LinearLayout>
 
         <LinearLayout
@@ -59,27 +78,21 @@
             android:gravity="center"
             android:orientation="horizontal">
 
-            <ImageButton
-                android:id="@+id/takePicture_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:background="@color/white"
-                app:srcCompat="@drawable/cap" />
-
             <Button
-                android:id="@+id/next_button2"
+                android:id="@+id/skip_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
                 android:layout_margin="15dp"
-                android:layout_weight="0"
                 android:background="@color/white"
-                android:text="@string/next"
-                android:textColor="@color/purple_500"
-                android:visibility="gone"
-                app:backgroundTint="@color/white" />
+                android:gravity="center"
+                android:text="@string/skip"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/white"
+                app:iconGravity="start" />
 
         </LinearLayout>
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

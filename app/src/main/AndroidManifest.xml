@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SyncShot"
         android:usesCleartextTraffic="true">
-        <activity android:name=".check_two"></activity>
-        <activity android:name=".check_one" />
-        <activity android:name=".scroll_view" />
         <activity android:name=".CameraActivity" />
         <activity android:name=".SelectPose" />
         <activity android:name=".SelectBackground" />

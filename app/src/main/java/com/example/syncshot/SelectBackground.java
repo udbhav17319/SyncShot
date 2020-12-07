@@ -13,10 +13,10 @@ public class SelectBackground extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_background);
+        setContentView(R.layout.activity_select_background_);
 
 
-        ImageButton button7 = (ImageButton) findViewById(R.id.back_button);
+        Button button7 =  findViewById(R.id.back_button);
         button7.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(SelectBackground.this, InvitePeople.class));

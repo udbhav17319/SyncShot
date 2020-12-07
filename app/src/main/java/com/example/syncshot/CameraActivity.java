@@ -55,7 +55,7 @@ public class CameraActivity extends AppCompatActivity {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             Bitmap imageBitmap = (Bitmap) extras.get("data");
-            ImageView imageView = null;
+            ImageView imageView = findViewById(R.id.imageView);
             imageView.setImageBitmap(imageBitmap);
         }
     }
